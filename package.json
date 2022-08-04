@@ -1,0 +1,33 @@
+{
+  "name": "fastify-technical-interview",
+  "version": "1.0.0",
+  "description": "Lucas Paviotti Technical Interview",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "nodemon build/server.js",
+    "start": "node build/server.js",
+    "test": "tap --node-arg=--require=ts-node/register"
+  },
+  "author": "Lucas Paviotti",
+  "license": "ISC",
+  "dependencies": {
+    "@types/tap": "^15.0.7",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "fastify": "^4.3.0",
+    "fastify-favicon": "^4.1.0",
+    "fastify-plugin": "^4.0.0",
+    "node-cache": "^5.1.2",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "@tsconfig/node14": "^1.0.3",
+    "@types/node": "^18.6.3",
+    "pino-pretty": "^8.1.0",
+    "tap": "^16.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
