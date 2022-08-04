@@ -16,3 +16,7 @@ También se puede consultar cualquier otra ciudad usando las coordenadas de la s
 ## Tests
 
 Los tests utilizan [node-tap](https://node-tap.org/) y se encuentran en los archivos `src/app.test.ts` y `src/routes/weather.test.ts`
+
+## Cache Plugin
+
+La implementación del plugin de cache está dentro de la carpeta plugins en src
