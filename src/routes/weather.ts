@@ -50,8 +50,7 @@ const routes: FastifyPluginAsync = async (fastify) => {
       const result = await axios.get(
         `https://api.openweathermap.org/data/2.5/onecall?lat=-33.1229869&lon=-64.3477571&exclude=minutely,hourly,daily,alerts&units=metric&appid=${process.env.OPENWEATHERMAPAPPID}`
       );
-      console.log('asd')
-
+      
       reply
         .code(200)
         .header("Content-Type", "application/json; charset=utf-8")
