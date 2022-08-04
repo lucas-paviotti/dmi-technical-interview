@@ -11,7 +11,7 @@ const build = (opts = {}) => {
 
   app.register(weatherRoute);
   app.register(fastifyFavicon);
-  // app.register(cache);
+  app.register(cache);
   app.setNotFoundHandler((request, reply) => {
     reply
       .code(404)
